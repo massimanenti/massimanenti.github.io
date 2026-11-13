@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Alessandro Manenti, Ph.D. student</title>
+        <title>Massimiliano Manenti, Ph.D. student</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Alessandro Manenti</span>
+                <span class="d-block d-lg-none">Massimiliano Manenti</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -43,30 +43,28 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Alessandro
+                        Massimiliano
                         <span class="text-primary">Manenti</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Lugano, Switzerland 
+                        Stuttgart, Germany
                     </div>
                     <p class="lead mb-5">
-                        Hi! I'm <b>Alessandro</b>, a Ph.D. student in the <a href="https://gmlg.ch/" target="_blank">Graph Machine Learning Group</a> 
-                        which is a research team of the <a href="https://www.idsia.ch/" target="_blank">Swiss AI Lab IDSIA</a>, 
-                        under the supervision of Professor <a href="https://scholar.google.com/citations?user=zyzNf4AAAAAJ&hl=en" target="_blank">Cesare Alippi</a>. 
+                        Hi! I'm <b>Massimiliano</b>, a Ph.D. student at the <a href="https://www.ist.uni-stuttgart.de/" target="_blank">Institute for Systems Theory and Automatic Control</a>, 
+                        under the supervision of Professor <a href="https://scholar.google.com/citations?user=QUE1zsYMw6sC&hl=en" target="_blank">Andrea Iannelli</a>. 
                         </br>
                         </br>
-                        From July 2026 to December 2026, I will be in London as a Student Researcher at <a href="https://deepmind.google/" target="_blank">Google DeepMind</a>.
+                        My broader research interests lie at the intersection of <b>control theory</b> and <b>Reinforcement Learning</b>. 
+                        In particular, I am interested in understanding how these two fields can complement each other, and how introducing <b>hierarchical structures</b> into the control loop can make otherwise unsolvable tasks tractable. 
                         </br>
-                        </br>
-                        I develop methods to learn <b>latent relational structures</b> that enhance deep learning models, with a focus on <b>discrete latent spaces</b>.
-                        I use theoretical insights to guide research on how to train latent-variable models <b>accurately and efficiently</b>.
+                        More broadly, I aim to investigate the theoretical benefits of hierarchies in both RL and control, exploring how they can improve learning, planning, and decision-making in complex dynamical systems.
                         </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://scholar.google.com/citations?user=T3dBGJUAAAAJ&hl=en">
+                        <a class="social-icon" href="https://scholar.google.com/citations?user=bQdsivkAAAAJ&hl=en">
                             <img src="./assets/img/scholar_icon.svg" alt="scholar" style="width: 24px; height: 24px;">
                         </a>
-                        <a class="social-icon" href="https://github.com/allemanenti"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://linkedin.com/in/alessandromanenti"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/massimanenti"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/massimiliano-manenti/"><i class="fab fa-linkedin-in"></i></a>
                         <!--<a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>-->
                         <!--<a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>-->
                     </div>
@@ -84,52 +82,23 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
                             <div class="subheading mb-3">
-                                <a href="https://arxiv.org/abs/2509.24728">
-                                    Beyond Softmax: A Natural Parameterization for Categorical Random Variables
+                                <a href="https://www.sciencedirect.com/science/article/pii/S0925231226027177">
+                                    Convergence and stability of Q-learning in Hierarchical Reinforcement Learning
                                 </a>
-                                <div> ICML 2026</div>
+                                <div> Neurocomputing, 2026</div>
                             </div>
                             <p>
-                                We show that in deep learning models using <b>latent categorical random variables</b> (e.g., VAE, RL, GNNs), the <b>softmax
-                                function</b> - commonly used to parameterize the distribution - <b>can hinder training</b>. 
-                                We theoretically motivate why this is the case using results from Information Geometry. 
-                                We then propose an alternative parameterization, the <b>catnat function</b>, that - as we prove - has <b>better information-theoretic properties</b>.
-                                Extensive empirical evidence demonstrates its effectiveness across diverse settings.
+                                Hierarchical Reinforcement Learning promises, among other benefits, to efficiently capture and utilize the temporal structure of a decision-making problem and to enhance transfer learning capabilities, but theoretical guarantees lag behind practice. 
+                                In this paper, we propose a Feudal Q-learning scheme and investigate under which conditions its coupled updates converge and are stable. 
+                                By leveraging the theory of Stochastic Approximation and the ODE method, we present a theorem stating the convergence and stability properties of Feudal Q-learning. 
+                                This provides a principled convergence and stability analysis tailored to Feudal RL. 
+                                Moreover, we show that the updates converge to a point that can be interpreted as an equilibrium of a suitably defined game, opening the door to game-theoretic approaches to Hierarchical RL. 
+                                Lastly, experiments based on the Feudal Q-learning algorithm support the outcomes anticipated by theory.
                             </p>
                         </div>
                     </div>
 
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">
-                                <a href="https://arxiv.org/abs/2602.12703">
-                                    SWING: Unlocking Implicit Graph Representations for Graph Random Features
-                                </a>
-                                <div> ICML 2026 - <b>spotlight paper (top 2% of valid submissions)</b> </div>
-                            </div>
-                            <p>
-                                We propose a <b>linear-time</b> approximation of Graph Random Features for computing <b>graph kernels</b>. We achieve this complexity
-                                by <b>avoiding explicit graph materialization</b> through the use of Gumbel-softmax sampling and random features. The approach
-                                is accelerator-friendly, theoretically grounded, and empirically shown to achieve <b>order-of-magnitude speedups</b> while
-                                matching or improving the accuracy of standard GRFs across <b>synthetic benchmarks</b>, on <b>point clouds</b> and on <b>vision
-                                transformers</b>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3"> <a href="https://arxiv.org/abs/2405.19933"> Learning Latent Graph
-                                    Structures and their Uncertainty </a> 
-                                <div> ICML 2025</div>
-                                </div>
-                            <p>Graph Neural Networks and related models benefit from relational information, but <b>task-relevant relations are often latent</b>. 
-                                Accurately learning these latent <b>structures</b> and <b>their uncertainty</b> is difficult without <b>direct</b> supervision. 
-                                In this paper we show that <b>standard loss functions</b> (e.g., MAE, MSE, ...), even when when in a probabilistic form, <b>fail</b> to recover such probabilistic relations. We prove and empirically show that a <b>broad class of losses</b> provides stronger guarantees into <b>learning the correct uncertainty</b> over the latent variables while maintaining predictive accuracy. </p>
-                        </div>
-
-                    </div>
 
             
             
@@ -147,30 +116,38 @@
                                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                     <div class="flex-grow-1">
                                         <h3 class="mb-0">Ph.D. student</h3>
-                                        <div class="subheading mb-3">The Swiss AI Lab IDSIA - USI, Faculty of Informatics</div>
-                                        <div>Ph.D. in Graph Deep Learning. I study methods for learning latent variables in deep learning models more accurately and efficiently.</div>
+                                        <div class="subheading mb-3">Institute for Systems Theory and Automatic Control, University of Stuttgart</div>
+                                        <div>Ph.D. in Hierarchical Reinforcement Learning. I aim to investigate the theoretical benefits of hierarchies in both RL and control, exploring how they can improve learning, planning, and decision-making in complex dynamical systems.</div>
                                         <p></p>
                                     </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">December 2022 - Present</span></div>
+                                    <div class="flex-shrink-0"><span class="text-primary">September 2024 - Present</span></div>
                                 </div>
                                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Phisics of Complex Systems - Master's Double Degree</h3>
-                                        <div class="subheading mb-3">Poilitecnico di Torino - SISSA - Sorbonne Université</div>
-                                        <div>Physics of Complex Systems is a branch of physics that explores the emergent behaviors and phenomena that arise from the interactions of
-                                        numerous agents. <br> <br>
-                                        Thesis title: <a href="https://webthesis.biblio.polito.it/secure/24750/1/tesi.pdf">"Deep Learning techniques for Natural Language Processing: A multilingual Encoder model for NLI task"</a></div>
+                                        <h3 class="mb-0">Researcher at Robert Bosch GmbH</h3>
+                                        <div class="subheading mb-3">Renningen, Germany</div>
+                                        <div>I worked on developing provably safe Model Predictive Control algorithms for autonomous vehicles.</div>
                                         <p></p>
                                     </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">September 2020 - July 2022</span></div>
+                                    <div class="flex-shrink-0"><span class="text-primary">January 2023 - June 2024</span></div>
                                 </div>
                                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                     <div class="flex-grow-1">
-                                        <h3 class="mb-0">Phisics - Bachelor's Degree</h3>
-                                        <div class="subheading mb-3">Università di Trento</div>
-                                        <div>I'm sure you know what Physics is. <br> <br>
-                                        Thesis title: <a href="">"Seed nodes identification during an epidemic: a Bayesian inference approach on networks via Belief Propagation"</a>
-                                        </div>
+                                        <h3 class="mb-0">Automation and Control Engineering - Master's Degree</h3>
+                                        <div class="subheading mb-3">Poilitecnico di Milano</div>
+                                        <div> Automation and Control Engineering combines engineering and technology to create intelligent systems that make machines and industrial processes operate smarter, more efficiently, and autonomously. <br> <br>
+                                            Grade: 110/110 cum laude <br> <br>
+                                            Thesis title: "Autonomous skid-steering tracked robot with a trailer for vineyard navigation"</div>
+                                        <p></p>
+                                    </div>
+                                    <div class="flex-shrink-0"><span class="text-primary">September 2020 - December 2022</span></div>
+                                </div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">Automation and Control Engineering - Bachelor's Degree</h3>
+                                        <div class="subheading mb-3">Poilitecnico di Milano</div>
+                                        <div> Automation and Control Engineering combines engineering and technology to create intelligent systems that make machines and industrial processes operate smarter, more efficiently, and autonomously. <br> <br>
+                                            Grade: 99/110 </div>
                                         <p></p>
                                     </div>
                                     <div class="flex-shrink-0"><span class="text-primary">September 2017 - July 2020</span></div>
@@ -195,48 +172,6 @@
                                     <div class="flex-shrink-0"><span class="text-primary">Spring Semester 2026</span></div>
                                 </div>
 
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                    <div class="flex-grow-1">
-                                        <div class="subheading mb-3">Graph Deep Learning - 3 ECTS</div>
-                                    </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">Autumn Semester 2025-2026</span></div>
-                                </div>
-
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                    <div class="flex-grow-1">
-                                        <div class="subheading mb-3">Graph Deep Learning - 3 ECTS</div>
-                                    </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">Spring Semester 2025</span></div>
-                                </div>
-
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                    <div class="flex-grow-1">
-                                        <div class="subheading mb-3">Advanced Topics in Machine Learning - 6 ECTS</div>
-                                    </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">Autumn Semester 2024-2025</span></div>
-                                </div>
-                                
-                                
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                    <div class="flex-grow-1">
-                                        <div class="subheading mb-3">Machine Learning - 6 ECTS</div>
-                                    </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">Spring Semester 2024</span></div>
-                                </div>
-                                
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                    <div class="flex-grow-1">
-                                        <div class="subheading mb-3">Advanced Topics in Machine Learning - 6 ECTS</div>
-                                    </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">Autumn Semester 2023-2024</span></div>
-                                </div>
-                                
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                    <div class="flex-grow-1">
-                                        <div class="subheading mb-3">Machine Learning - 6 ECTS</div>
-                                    </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">Spring Semester 2023</span></div>
-                                </div>
                             </div>
                         </section>
                         <hr class="m-0" />
