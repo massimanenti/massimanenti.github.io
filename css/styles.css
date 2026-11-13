@@ -10983,3 +10983,45 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* Pastel Blue Theme */
+
+:root {
+    --bs-primary: #B8D6F0;
+    --bs-primary-rgb: 184, 214, 240;
+}
+
+/* Navigation bar */
+#sideNav {
+    background-color: #293B50 !important;
+}
+
+/* Headings, dates and highlighted text */
+.text-primary {
+    color: #6D99C2 !important;
+}
+
+/* name */
+.text-name {
+    color: #293B50 !important;
+}
+
+/* Links */
+a {
+    color: #6D99C2;
+}
+
+a:hover {
+    color: #426F98;
+}
+
+/* Page background and text */
+body {
+    background-color: #F7FAFE;
+    color: #293B50;
+}
+
+/* Section separators */
+hr {
+    border-color: #DCEBFA;
+}
